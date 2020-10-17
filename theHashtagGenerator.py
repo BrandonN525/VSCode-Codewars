@@ -2,10 +2,8 @@ import string
 def generate_hashtag(s):
     #Capitalize the first letter in each word
     sNew = string.capwords(s)
-    #Remove spaces in between words
-    sReal = sNew.replace(" ", "")
-    #Add a hashtag to the string
-    result = "#" + sReal
+    #Remove spaces in between words and add hashtag to string
+    result = "#" + sNew.replace(" ", "")
     
     #If result is greater than 140 characters return false
     if len(result) > 140:
