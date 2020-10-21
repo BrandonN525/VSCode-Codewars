@@ -5,7 +5,7 @@ def is_isogram(string):
     length = len(string)
     my_list = []
     
-    # For loop to do the comparison of letters
+    # For loop to iterate through letters
     for i in range (0, length):
         
         # If a letter in the string is already in the list the test fails
