@@ -1,15 +1,11 @@
 def is_isogram(string):
     
-    # First turn the input string into all lowercase to disregard letter case
+    # Disregard letter case
     string = string.lower()
-    
-    # Grab the length of the string
     length = len(string)
-    
-    # Create a list so that we can add all letters in and compare
     my_list = []
     
-    # For list to do the comparison of letters
+    # For loop to do the comparison of letters
     for i in range (0, length):
         
         # If a letter in the string is already in the list the test fails
