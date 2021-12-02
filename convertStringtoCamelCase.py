@@ -10,7 +10,7 @@ def to_camel_case(text):
         #If character is not a dash or underscore and nextchar is False then add character to answer string    
         elif nextchar == False:
             answer += text[i]
-        #If nextchar is True then add character in Uppercase to answer string
+        #If nextchar is True then add character in Uppercase to answer string and set nextchar to False
         else:
             answer += text[i].upper()
             nextchar = False
